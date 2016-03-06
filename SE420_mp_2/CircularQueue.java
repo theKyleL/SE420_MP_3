@@ -22,7 +22,7 @@ public class CircularQueue<E> implements FixedSizeQueueInterface<E> {
 	 */
 	public CircularQueue(int maxQueueSize) throws Exception {
 		super();
-		if (maxQueueSize==0) // bug: incorrect test for argument. Values greater than zero should bypass if statement. 
+		if (maxQueueSize<1) // bug: incorrect test for argument. Values greater than zero should bypass if statement. 
 			// fix: test maxQueueSize equal to 0
 		{
 			throw new Exception("Queue capacity invalid.");
