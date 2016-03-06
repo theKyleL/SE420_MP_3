@@ -35,7 +35,7 @@ public class CircularQTest {
 	public void testSizeEqual0() throws Exception {
 		
 		try{
-			q = new CircularQueue<Integer>(10);
+			q = new CircularQueue<Integer>(0);
 		}
 		catch(Exception e){
 			System.out.println(e);
